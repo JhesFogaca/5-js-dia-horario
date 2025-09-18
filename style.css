@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    color: white;
+    display: flex;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title.container {
+    position: relative;
+    backdrop-filter: blur;
+    border: 2px solid white;
+    padding: 7.5em 2.5em 4em 2.5em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: flex;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 20px 20px;
+    height: 70px;
+}
+
+h1 {
+    color: rgb(58, 50, 50);
+    font-size: 28px;
+}
+
+.title::before {
+    /*este comando faz a borda no sentindo fora*/
+    content: "";
+    top: 0;
+    left: -30px;
+    position: absolute;
+    border-top-right-radius: 50%;
+    width: 30px;
+    height: 30px;
+    box-shadow: 15px 0 0 0 rgb(255, 255, 255);
+    background: transparent;
+}
+
+.title::after {
+    content: "";
+    top: 0;
+    right: -30px;
+    position: absolute;
+    border-top-left-radius: 50%;
+    height: 30px;
+    width: 30px;
+    box-shadow: -15px 0 0 0 rgb(255, 255, 255);
+    background: transparent;
+
+}
+
+section {
+    background: #ffffff2d;
+    border-radius: 30px;
+    border: none;
+    padding-top: 100px;
+    width: 400px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.425);
+    backdrop-filter: blur(15px);
+}
+
+div {
+    text-align: center;
+    padding: 8px;
+}
+
+#imagem {
+    box-shadow: 2px 15px 15px rgba(0, 0, 0, 0.329);
+    border-radius: 50%;
+}
+
+p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}
